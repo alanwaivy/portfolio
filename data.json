@@ -1,0 +1,11 @@
+{
+	"description": "Full Stack Developer specializing in Laravel, React, Node, Next.js, TypeScript, and Tailwind CSS",
+	"githubUsername": "alanwaivy",
+	"avatarUrl": "",
+	"displayName": "Alan Waivy",
+	"email": "alan@example.com",
+	"projects": {
+		"blacklist": [],
+		"heroNames": []
+	}
+}
