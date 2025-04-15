@@ -35,7 +35,7 @@ const UserText = async ({ promise }) => {
 	const user = await promise;
 
 	return (
-		<p>Hi, my name is {user.name || data.displayName}{'. '}{user.bio}</p>
+		<p>Hi, my name is { data.displayName}{'. '} </p>
 	);
 };
 
@@ -70,11 +70,11 @@ const LandingComponent = async ({ searchParams: { customUsername } }) => {
 			</h1>
 
 			<div className="hidden w-screen h-px animate-glow md:block animate-fade-right bg-linear-to-r from-zinc-300/0 via-zinc-300/50 to-zinc-300/0" />
-			<div className="my-16 text-center animate-fade-in">
+			<div className="my-8 text-center animate-fade-in">
 				<h2 className="text-lg text-zinc-500">
 					<Suspense fallback={<div className="w-full h-px min-h-28">Loading...</div>}>
-						<div className="w-full h-px min-h-28">
-							<UserText promise={promise} />
+						<div className="w-full  h-28">
+							{/* <UserText promise={promise} /> */}
 							<ProfileOrganizations username={username} />
 							<RecentActivity username={username} />
 						</div>

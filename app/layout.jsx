@@ -26,10 +26,10 @@ export const metadata = {
 	},
 	icons: [
 		{
-			url: "/favicon.ico",
+			url: "/icon.ico",
 			rel: "icon",
 			sizes: "any",
-			type: "image/svg+xml",
+			type: "image/x-icon",
 		},
 	]
 };

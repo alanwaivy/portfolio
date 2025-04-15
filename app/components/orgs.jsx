@@ -1,13 +1,14 @@
 import Link from "next/link";
 import Image from "next/image";
 import { getUserOrganizations } from "../data";
+import data from "../../data.json";
 
 export const ProfileOrganizations = async ({ username }) => {
 
 	const organizations = (await getUserOrganizations(username)).data.user?.organizations.nodes;
 
 	return (
-		<p>I'm building stuff{
+		<p>In Love With Building Online{
 			organizations?.length > 0 ? <>
 				{" "}at{" "}
 				<span className="mt-3 overflow-hidden">
