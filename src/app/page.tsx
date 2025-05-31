@@ -175,12 +175,20 @@ export default function Home() {
       }
     };
 
+    const handleEscKey = (event: KeyboardEvent) => {
+      if (event.key === 'Escape') {
+        setActiveSection(null);
+      }
+    };
+
     if (activeSection) {
       document.addEventListener('mousedown', handleClickOutside);
+      document.addEventListener('keydown', handleEscKey);
     }
 
     return () => {
       document.removeEventListener('mousedown', handleClickOutside);
+      document.removeEventListener('keydown', handleEscKey);
     };
   }, [activeSection]);
 
